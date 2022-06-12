@@ -1,0 +1,2451 @@
+$boxbgcolor: #FFFFFF;
+$basic_color: #131316;
+
+$special_color: #cb2274;
+$bgcolor: #F4F4FC;
+$success: #75C07E;
+$profit:#27A69A;
+$loss:#F6484A;
+
+$extra-weight: 700;
+$tittle-weight:600;
+$subtittle-weight:500;
+$text-weight:400;
+
+$font-tittle: 1vw;
+$font-subt: 0.8vw;
+$font-tittle2: 1.2vw;
+$btn-size: 3.7vw;
+
+$mobile-font-tittle: 13px;
+$mobile-font-subt: 9px;
+$mobile-font-tittle2: 15px;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    z-index: -1;
+    font-family: Montserrat !important;
+    background-color: $bgcolor !important;
+    overflow-x: hidden !important;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+}
+.dropdown,
+.dropdown:active,
+.dropdown:focus,
+.dropdown.active{
+    background-image: none !important;
+    outline: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    a{
+        background-image: none !important;
+        outline: 0 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+}
+
+.spacing{
+    margin-left: 5vw;
+}
+.noarrow{
+    ::after{
+        content: none !important;
+    }
+}
+.switch-mode{
+    border: none !important;
+    background: none !important;
+    img{
+        width: 15px;
+        height: 15px;
+    }
+}
+.leftmenu{
+    .nav-link{
+        padding: var(--bs-nav-link-padding-y) 10px!important;
+    }
+    .dropdown-menu{
+        right: 0px;
+    }
+}
+.navbar-brand{
+    span{
+        font-size: 15px !important;
+        font-weight: $tittle-weight !important;
+    }
+}
+.nav-item{
+    a{
+        color: $basic_color !important;
+        font-weight: $tittle-weight !important;
+        font-size: 13px;
+    }
+}
+.dropdown-menu{
+    border: 0px !important;
+    .dropdown-item{
+        align-items:unset !important;
+        padding-top: 10px !important;
+    }
+    p{
+        margin: 0 !important;
+        margin-top: -23px !important;
+        float: left;
+        margin-left: 16px !important;
+        font-size: 11px;
+    }
+    :hover{
+        background-color: #fff9fc !important;
+        color: #ff9dcb !important;
+    }
+    :active{
+        background-color: #fff9fc !important;
+        color: #ff9dcb !important;
+    }
+}
+.navbar{
+    height: 60px;
+    background-color: $boxbgcolor !important;
+    z-index: 99 !important;
+    padding: 0px !important;
+}
+.dropdown-item{
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    
+    
+}
+.navbar{
+    .btn{
+        border-radius: 20px !important;
+        padding: 0px 20px 0px 20px !important;
+        height: 25px;
+        border: none !important;
+        font-size: 11px !important;
+    }
+}
+.btn{
+    border: none !important;
+    height: 45px;
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    font-size: 13px !important; 
+    font-weight: $subtittle-weight !important;
+    img{
+        margin-right: 10px;
+    }
+}
+.btn-primary{
+    background-color: $special_color !important;
+}
+.logb{
+    margin-right: 15px !important;
+}
+.logbox{
+    border: none !important;
+    margin: 10vh 10vw;
+    .apb{
+        margin-bottom: 10px;
+    }
+    span{
+        margin: 3px 0px 3px 0px;
+        font-size: 13px;
+        font-weight: $subtittle-weight;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .bar{
+            margin: 0px 10px 0 10px;
+            width: 45%;
+            height: 1px;
+            background-color: #c5c5c5;
+        }
+    }
+}
+label{
+    font-size: 11px;
+    margin-left: 5px;
+    margin-bottom: -10px !important;
+    font-weight: $subtittle-weight;
+}
+input::placeholder{
+    font-size: 13px;
+}
+input{
+    font-size: 13px !important;
+    height: 40px;
+    outline: none !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+*:focus {
+    border: 1px solid #ced4da !important;
+    box-shadow: 0px 0px 13px #dbdbdb !important;
+}
+.shadow-mm{
+    box-shadow: 0px 3px 1px #dbdbdb !important;
+}
+.shadow-lt{
+    box-shadow: 0px 3px 2px #e0e0e0 !important;
+}
+.col-sm-4{
+    width: 400px !important;
+    margin-left: 6vw !important;
+    margin-right: 6vw !important;
+}
+.mb-3{
+    span{
+        margin-bottom: -10px;
+        a{
+            text-decoration: none;
+            color: $basic_color;
+        }
+    }
+}
+.min-button{
+    text-decoration: none;
+    color: $basic_color;
+    font-size: 13px;
+    font-weight: $tittle-weight;
+}
+.mb-4{
+    p{
+        font-size: 11px;
+        text-align: start;
+    }
+}
+.margin-c{
+    margin-top: -10px;
+}
+.otp-control{
+    font-size: 11px !important;
+    font-weight: $tittle-weight;
+}
+.mb-5{
+    span{
+        margin-bottom: -10px;
+        a{
+            text-decoration: none;
+            color: $basic_color;
+        }
+    }
+}
+.otpbox{
+    border: none !important;
+    margin-top: 20vh;
+    margin: 20vh 10vw;
+    span{
+        margin: 3px 0px 3px 0px;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.btn-success{
+    background-color: $success !important;
+}
+p{
+    font-size: 13px;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: $special_color;
+    }
+}
+.btn-option{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: $bgcolor;
+    text-align: start;
+    padding: 13px;
+    border: none;
+    margin: 10px;
+    img{
+        width: 25px;
+        margin-top: 10px;
+    }
+    p{
+        text-align: start;
+        margin-top: 23px;
+        font-size: 13px;
+        font-weight: $tittle-weight;
+
+    }
+    .x{
+        margin-top: 3px;
+    }
+    transition: 0.3s background;
+}
+.selected-option{
+    background-color: $basic_color;
+    img{
+        filter: invert(100%)
+    }
+    p{
+        color: $bgcolor;
+    }
+}
+.doc-input{
+    background-color: $bgcolor;
+    min-width: 45%;
+    min-height: 150px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 13px;
+    font-weight: $tittle-weight;
+    cursor: pointer;
+}
+.vertical-navbar{
+    position: fixed;
+    z-index: 98;
+    top: 0px;
+    padding-top: calc(60px + 1.5vw) !important;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    height: calc(100vh);
+    background-color: $boxbgcolor;
+    padding: 2.4vw 1.5vw;
+    font-size: $font-tittle;
+    .current-section{
+        margin-bottom: 10px;
+        h6{
+            font-weight: $tittle-weight;
+            font-size: $font-tittle2;
+        }
+    }
+    ul{
+        list-style-type: none;
+        margin-left: -1.5vw;
+        padding: 0;
+        li{
+            a{
+                text-decoration: none;
+                color: $basic_color;
+                display: flex;
+                width: 12vw;
+                height: 40px;
+                align-items: center;
+                font-weight: $subtittle-weight;
+                padding-left: 1.6vw;
+                border: none !important;
+            }
+            a:hover{
+                background: rgb(128,128,128);
+                background: linear-gradient(90deg, rgba(128,128,128,0.14049369747899154) 0%, rgba(255,255,255,0) 28%);
+            }
+            a:focus{
+                box-shadow: none !important;
+            }
+        }
+    }
+    .current-page{
+        border-left: 0.4vw solid $special_color !important;
+        background: rgb(203,34,116);
+        background: linear-gradient(90deg, rgba(203,34,116,0.14049369747899154) 0%, rgba(255,255,255,0) 28%);
+        font-weight: $tittle-weight !important;
+    }
+}
+.dashb-right{
+    margin-left: 2vw;
+    width: 28vw;
+    height: 60vw !important;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+}
+.container{
+    margin-left: 15vw !important;
+    max-width: 85vw !important;
+    padding: 2vw !important;
+    flex-wrap: wrap !important;
+}
+.trans-co{
+    max-width: 83vw !important;
+}
+.card{
+    border: none !important;
+}
+.total-balance{
+    background-color: $boxbgcolor;
+    border: none !important;
+    min-width: 100% !important;
+    border-radius: 1.23vw !important;
+    padding: 1.64vw;
+    height: 25vw !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between;
+    span{
+        font-size: $font-tittle;
+        font-weight: $tittle-weight;
+    }
+    .amount-acc{
+        display: flex;
+        span{
+            font-size: $font-subt !important;
+            margin-right: 10px;
+        }
+    }
+    .profit-graph{
+        height: 10vw;
+    }
+    .ctas{
+        display: flex;
+        button{
+            margin-right: 20px;
+            font-weight: $tittle-weight !important;
+            min-width: 3vw !important;
+            width: 5vw;
+            height: 3vw;
+            padding: 0px 3.8vw !important;
+            display: flex;
+            text-align: center !important;
+            align-items: center !important;
+            font-size: 1vw !important;
+            span{
+                font-size: 2vw !important;
+                font-weight: $text-weight !important;
+                margin-right: 1vw;
+            }
+            
+        }
+    }
+    .balance{
+        display: flex !important;
+        justify-content: space-between;
+        .bal-prev{
+            display: flex !important;
+            align-items: center !important;
+            text-align: center !important;
+            align-items: center !important;
+            span{
+                font-size: 3vw;
+            }
+            p{
+                margin: 0;
+                margin-left: 15px;
+                color: $profit;
+                font-weight: $tittle-weight;
+            }
+        }
+    }
+}
+.hover-btn:hover{
+    filter:invert(5%);
+}
+button{
+    transition: filter 0.6s !important;
+}
+.sustain{
+    display: flex;
+    width: 60% !important;
+    flex-wrap: wrap;
+    height: 46vw;
+}
+.deposit-container{
+    height: calc(100vh - 60px);
+    align-items: center;
+    justify-content: center;
+    .deposit-tips{
+        margin-right: 30px;
+        width: 46%;
+        height: 85%;
+        span{
+            font-size: 13px;
+            font-weight: $tittle-weight;
+        }
+        .selected-coin{
+            background-color: $bgcolor;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border-radius: 8px;
+            .coin-info{
+                display: flex;
+                align-items: center;
+                height: 35px;
+                img{
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 10px;
+                }
+                .coin-name{
+                    span{
+                        font-weight: $extra-weight;
+                    }
+                    p{
+                        margin: 0;
+                        margin-top: -5px;
+                        font-size: 11px;
+                        font-weight: $tittle-weight;
+                    }
+                }
+            }
+            .coin-bal{
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+                height: 35px;
+                p{
+                    margin-top: 5px;
+                    text-align: start;
+                    font-size: 13px;
+                    font-weight: $subtittle-weight;
+                }
+                span{
+                    font-size: 15px;
+                    font-weight: $tittle-weight;
+                    color: #2c2c2c;
+                }
+            }
+            .change{
+                height: 1px;
+                align-items: center !important;
+                justify-content: end;
+                margin-right: 15px;
+                display: flex;
+                img{
+                    margin-top: 8px;
+                    height: 10px;
+                    margin-left: 10px;
+                }
+                span{
+                    font-size: 11px;
+                }
+            }
+        }
+        h6{
+            font-weight: $tittle-weight;
+        }
+        .deposit-tips{
+            p{
+                font-size: 12px;
+                span{
+                    font-weight: $tittle-weight;
+                    color: $loss;
+                }
+            }
+        }
+    }
+    .deposit-box{
+        width: 22%;
+        min-width: 48% !important;
+        height: 85%;
+        span{
+            font-size: 13px;
+            font-weight: $tittle-weight;
+        }
+        .network-types{
+            flex-wrap: wrap !important;
+            .selected-choice{
+                background-color: $special_color;
+                img{
+                    filter: invert(100%);
+                }
+                color: $bgcolor;
+            }
+            button{
+                margin-right: 1.64vw;
+                margin-bottom: 15px;
+                width: 29%;
+                height: calc(25px + 1.5vw ) !important;
+                font-weight: $tittle-weight !important;
+                img{
+                    width: 15px;
+                }
+            }
+            button:hover{
+                filter: invert(5%);
+            }
+            button:focus{
+                border: none !important;
+            }
+            button:nth-child(3){
+                margin-right: 0;
+            }
+        }
+        .deposit-addr-info{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img{
+                width: 130px;
+            }
+            p{
+                font-size: 11px;
+                width: 250px;
+            }
+            .copy-btn{
+                display: flex;
+                img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 10px;
+                }
+                p{
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+.savings-preview{
+    margin-top: 3vh;
+    min-width: 48% !important;
+    padding: 1.64vw;
+    border-radius: 15px !important;
+    height: 18vw !important;
+    span{
+        font-size: $font-tittle2;
+        font-weight: $extra-weight;
+        margin-top: 0px;
+    }
+    .lock-graph{
+        height: 9.84vw;
+    }
+    .locked-prev-amount{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-bottom: -0.7vw;
+        span{
+            font-size: 2.3vw;
+            font-weight: 600;
+        }
+        p{
+            margin: 0;
+            margin-left: 15px;
+            font-weight: $tittle-weight;
+            color: $profit;
+        }
+    }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
+.sel-coin{
+    .selected-coin{
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        background-color: $bgcolor;
+        cursor: pointer;
+        transition: filter 0.7s;
+        .coin-info{
+            display: flex;
+            align-items: center;
+            height: 3vw;
+            img{
+                width: 2vw;
+            }
+            .coin-name{
+                height: 40px;
+                margin-left: 10px;
+                span{
+                    font-size: 1vw;
+                    font-weight: $tittle-weight;
+                }
+                p{
+                    font-size: 0.9vw;
+                    margin-top: -3px;
+                    font-weight: $subtittle-weight;
+                }
+            }
+        }
+        .coin-bal{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 0px;
+            height: 3vw;
+            span{
+                font-size: 1.2vw;
+                font-weight: $tittle-weight;
+            }
+            p{
+                font-size: 0.9vw;
+                font-weight: $subtittle-weight;
+            }
+        }
+        .change{
+            height: 0px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin-top: 5px;
+            span{
+                font-size: 0.8vw;
+                font-weight: $tittle-weight;
+                margin-right: 5px;
+            }
+            img{
+                margin-right: 1vw;
+                width: 0.8vw;
+            }
+        }
+    }
+    button{
+        height: $btn-size;
+        font-size: $font-tittle !important;
+    }
+}
+.explore-cryptos{
+    margin-top: 20px;
+    span{
+        font-size: 15px;
+        font-weight: $tittle-weight;
+    }
+    .top-crypto{
+        margin-top: 0.8vw;
+        background-color: $boxbgcolor;
+        border-radius: 0.6vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: $btn-size;
+        padding: 0px 0.3vw;
+        .info{
+            display: flex;
+            height: 3.5vw;
+            img{
+                width: 3.8vw;
+                height: 3.8vw;
+                margin-right: 0.3vw;
+                margin-top: -0.3vw;
+            }
+            .coin-info{
+                margin-top: 0vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                span{
+                    font-size: $font-tittle2;
+                }
+                p{
+                    margin: 0;
+                    margin-top: -0.3vw;
+                    font-size: $font-subt;
+                }
+            }
+        }
+        .apy{
+            margin-right: 0.7vw;
+            color: $profit;
+        }
+    }
+}
+.send-receive{
+    border-radius: 1.23vw !important;
+    background-color: $boxbgcolor !important;
+    height: 32.5vw;
+    padding: 1.5vw;
+    .selected-choice{
+        font-weight: $tittle-weight !important;
+    }
+    .sr-body{
+        margin-top: 25px;
+        .receive-info{
+            display: none;
+            .addr-network-btn{
+                cursor: pointer;
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:0px 15px;
+                background-color: $bgcolor;
+                height: 3.7vw;
+                border-radius: 8px;
+                transition: filter 0.7s;
+                .info{
+                    display: flex;
+                    align-items: center;
+                    font-size: 1vw;
+                    font-weight: $tittle-weight;
+                    span{
+                        margin-top: 3px;
+                    }
+                    img{
+                        width: 1vw;
+                        height: 1vw;
+                        margin-right: 10px;
+                    }
+                }
+                .current-network{
+                    font-size: $font-tittle;
+                    font-weight: $tittle-weight;
+                    margin-top: 3px;
+                }
+            }
+            .wallet-addr-info{
+                transition: filter 0.7s;
+                cursor: pointer;
+                background-color: $bgcolor;
+                margin-top: 10px;
+                display: flex;
+                padding: 10px;
+                align-items: center;
+                border-radius: 8px;
+                .info{
+                    .extra{
+                        display: flex;
+                        align-items: center;
+                        span{
+                            font-size: $font-tittle;
+                            margin-right: 10px;
+                            font-weight: $subtittle-weight;
+                        }
+                        p{
+                            margin: 0;
+                            font-size: $font-subt;
+                        }
+                    }
+                    h5{
+                        font-size: $font-tittle !important;
+                        margin: 0;
+                        width: 18vw;
+                        margin-top: 5px;
+                        font-weight: $subtittle-weight;
+                    }
+                }
+                img{
+                    width: 1vw;
+                    height: 1vw;
+                    margin-left: 1.5vw;
+                }
+            }
+        }
+        .sr-input{
+            border: 1px solid #b8b8b8;
+            border-radius: 0.5vw;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 0.8vw;
+            height: 3.5vw;
+            label{
+                font-size: 1vw;
+                font-weight: $subtittle-weight;
+                margin-right: 1vw;
+                margin-top: -0.6vw;     
+            }
+            .i-control{
+                border: 1px solid #b8b8b8;
+                background-color:$boxbgcolor;
+                border-radius: 0.6vw;
+                height: 3.5vw;
+                min-width: 3.7vw;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                margin-right: 10px;
+                img{
+                    width: 1.4vw;
+                }
+            }
+            input{
+                border: none !important;
+                background: none !important;
+                outline: none !important;
+                box-shadow: none !important;
+                text-overflow:ellipsis !important;
+                width: 65%;
+                margin-top: 0px !important;
+                font-size: 1vw !important;
+                font-weight: $tittle-weight;
+                color: $basic_color !important;
+                -webkit-appearance: none;
+            }
+            input::placeholder{
+                font-size: 1vw;
+                font-weight: 500;
+            }
+            input:active{
+                font-weight: $tittle-weight;
+            }
+            input:focus{
+                font-weight: $tittle-weight;
+                color: $basic_color;
+            }
+        }
+    }
+}
+.horizontal-phone-navbar{
+    display: none;
+}
+.choice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+    height: 3.7vw;
+    background-color: $bgcolor;
+    border-radius:10px;
+    border: none !important;
+    .boxdeco{
+        background-color: $boxbgcolor;
+        border-radius: 7px;
+        width: 48%;
+        height: 2.8vw;
+        top: 0.5vw;
+        position: absolute;
+        left: 2%;
+        transition: transform 0.4s !important;
+    }
+    .choice-jx{
+        width: 48%;
+        top: 0.5vw;
+        height: 2.8vw;
+        position: absolute;
+        left: 50%;
+        cursor: pointer;
+        transition: transform 0.7s !important;
+        z-index: 3;
+    }
+    span{
+        z-index: 1;
+        font-weight: $subtittle-weight;
+        font-size: 1vw;
+        width: 49%;
+        text-align: center;
+        transition: font-weight 0.5s !important;
+    }
+}
+.exchange-step1-box{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    .choice-buy-sell{
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 1.5%;
+        height: 45px;
+        align-items: center;
+        background-color: $bgcolor;
+        font-size: 13px;
+        font-weight: $subtittle-weight;
+        .selected-choice{
+            font-weight: $tittle-weight;
+        }
+        .selector-css{
+            border-radius: 8px;
+            background-color: $boxbgcolor;
+            width: 42.5%;
+            position: absolute;
+            height: 35px;
+            transition: transform 0.3s;
+        }
+        .buy-choice{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            z-index: 1;
+            cursor: pointer;
+        }
+        .sell-choice{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+    .search-crypto{
+        display: flex;
+        flex-direction: column;
+        span{
+            margin-top:20px;
+            margin-bottom: 5px;
+            font-size: 13px;
+            font-weight: $tittle-weight;
+        }
+        input{
+            height: 45px;
+            border-radius: 8px;
+            min-width:70%;
+            background:none !important;
+            -webkit-appearance: none;
+            border: 1px solid #ced4da !important;
+            background: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            text-overflow:ellipsis !important;
+            padding: 0px 10px;
+            font-size: 15px !important;
+            font-weight: 600;
+        }
+    }
+    .select-crypto{
+        display: flex;
+        flex-direction: column;
+        span{
+            margin-top:20px;
+            margin-bottom: 5px;
+            font-size: 13px;
+            font-weight: $tittle-weight;
+        }
+        .crypto-box{
+            background-color: $bgcolor;
+            border-radius: 10px;
+            padding-left: 5px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .crypto-info{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 5px;
+                }
+                .info-box{
+                    height: 40px;
+                    span{
+                        margin: 0 !important;
+                        font-weight: $extra-weight;
+                    }
+                    p{
+                        margin-top: -5px;
+                        font-weight: $subtittle-weight;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+.wallet-overview{
+    display: flex;
+    .wallet-overview-left{
+        min-width: 66%;
+        .funds{
+            width: 100%;
+            height: auto !important;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            margin: 0 !important;
+            span{
+                font-size: 13px;
+                font-weight: $tittle-weight;
+            }
+            .total-bal{
+                display: flex;
+                align-items: center;
+                span{
+                    font-size: 25px;
+                }
+                p{
+                    margin: 0;
+                    margin-left: 10px !important;
+                    font-weight: $tittle-weight !important;
+                    color: $loss;
+                }
+            }
+            .profit-graph{
+                height: 175px;
+            }
+            .ctas{
+                display: flex;
+                button{
+                    margin-right: 20px;
+                    font-weight: $tittle-weight !important;
+                    -webkit-appearance: none;
+                    border: none !important;
+                    outline: none !important;
+                    box-shadow: none !important;
+                    text-overflow:ellipsis !important;
+                }
+            }
+        }
+        .wallet-overview-portfolios{
+            display: flex;
+            justify-content: space-between;
+            .portfolio-preview{
+                margin-top: 20px;
+                background-color: $boxbgcolor;
+                border-radius: 10px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                width: 48%;
+                .p-info{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        width: 100%;
+                        font-size: 15px;
+                        font-weight: $tittle-weight;
+                        margin-top: 0 !important;
+                    }
+                    p{
+                        text-align: start;
+                        font-weight: $tittle-weight;
+                        font-size: 13px;
+                        color: $profit;
+                    }
+                }
+                span{
+                    margin-top: 40px;
+                    font-weight: $tittle-weight;
+                    font-size: 20px;
+                }
+                img{
+                    width: 60px;
+                    height: 60px;
+                    opacity: 20%;
+                    position: absolute;
+                    margin-left: 10px;
+                    margin-top: 50px;
+                }
+            }
+        }
+        .wallet-overview-coins{
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+            justify-content: space-between;
+            .wallet-overview-coin{
+                background-color: $boxbgcolor;
+                border-radius: 10px;
+                padding: 10px;
+                width: 23%;
+                .top{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    span{
+                        font-size: 15px;
+                        font-weight: $tittle-weight;
+                        margin-top: 0px !important;
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                p{
+                    margin: 0;
+                    margin-top: 15px;
+                    text-align: start;
+                    font-size: 15px;
+                    font-weight: $tittle-weight;
+                }
+            }
+        }
+    }
+    .wallet-overview-assets{
+        width: 28%;
+        margin-left: 40px;
+        span{
+            font-size: 15px;
+            font-weight: $tittle-weight;
+        }
+        .wallet-overview-crypto{
+            background-color: $boxbgcolor;
+            margin-top: 15px;
+            padding: 0px 10px;
+            display: flex;
+            height: 55px;
+            border-radius: 10px;
+            justify-content: space-between;
+            align-items: center;
+            .coin-left{
+                display: flex;
+                align-items: center;
+                img{
+                    width:50px;
+                    height: 50px;
+                }
+                .coin-info{
+                    margin-left: 1vw;
+                    font-weight: $tittle-weight;
+                    white-space: nowrap;
+                    span{
+                        font-size: 13px;
+                        font-weight: $extra-weight;
+                    }
+                    p{
+                        margin: 0 !important;
+                        margin-top: -5px !important;
+                        font-size: 11px;
+                    }
+                }
+            }
+            .coin-right{
+                margin-right: 5px !important;
+                span{
+                    font-size: 13px;
+                }
+                p{
+                    margin: 0;
+                    color: $profit;
+                    margin-top: -5px;
+                    text-align: end;
+                    font-weight: $tittle-weight;
+                    font-size: 11px;
+                    img{
+                        width: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.green-bg{
+    background-color: #f2fff3 !important;
+}
+.blue-bg{
+    background-color: #e2e2ff !important;
+}
+.violet-bg{
+    background-color: #ebe2ff !important;
+}
+.conversion-rate{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    input{
+        height: 40px !important;
+        margin: 0 !important;
+        min-width: 100%;
+    }
+    span{
+        border: 1px solid #ced4da;
+        font-weight: 500 !important;
+        border-radius: 8px;
+        height: 40px !important;
+        min-width: 60px;
+        margin-left: -60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.send-fee{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    p{
+        margin: 0;
+        text-align: end;
+    }
+}
+.send-crypto-box{
+    button{
+        width: 100%;
+    }
+}
+.convert-crypto-input{
+    display: flex;
+    align-items: center;
+    background-color: $bgcolor;
+    border-radius: 10px;
+    height: 55px;
+    .btn-change-crypto{
+        border-radius: 8px;
+        background-color: $boxbgcolor;
+        height: 45px !important;
+        padding: 8px;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        margin-right: 10px;
+        cursor: pointer;
+        img:first-child{
+            width: 20px;
+            height: 20px;
+        }
+        img{
+            width: 15px;
+            height: 15px;
+        }
+        span{
+            margin: 0px 5px;
+            font-size: 13px !important;
+            font-weight: $extra-weight;
+            
+        }
+    }
+    input{
+        height: 60px;
+        min-width:70%;
+        border: none !important;
+        background:none !important;
+        -webkit-appearance: none;
+        border: none !important;
+        background: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        text-overflow:ellipsis !important;
+        text-align: end;
+        padding-right: 10px;
+        font-size: 15px !important;
+        font-weight: 500;
+    }
+    .btn-max-balance{
+        margin-top: 85px;
+        margin-left: -35px;
+        font-size: 11px;
+        border: none !important;
+        background: none !important;
+        font-weight: $tittle-weight;
+    }
+}
+.convert-box{
+    min-width: 450px !important;
+    margin-top: 5vh;
+    font-family: Montserrat !important;
+    span{
+        font-size: 13px;
+        font-weight: $tittle-weight;
+    }
+    .text-start{
+        span{
+            color: $loss;
+            font-weight: $tittle-weight;
+        }
+    }
+}
+.transfers-container{
+    background-color: $boxbgcolor;
+    border-radius: 15px;
+    width: 90% !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    margin-top: 5vh;
+    span{
+        font-size: 13px;
+        font-weight: $tittle-weight;
+    }
+    table{
+        border-collapse: collapse;
+        .table-sections{
+            font-size: 13px;
+            font-weight: $tittle-weight;
+            td{
+                text-align: center;
+            }
+        }
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+        td:nth-child(1){
+            display: flex;
+        }
+        tr:nth-child(1n+2){
+            td{
+                font-size: 13px;
+                font-weight: $subtittle-weight;
+                padding: 15px 0px 15px 20px;
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+            }
+            td:nth-child(1n+2){
+                text-align: center;
+            }
+            .sent{
+                color: $loss;
+            }
+            .received{
+                color: $profit;
+            }
+        }
+    }
+}
+.exchange-options-box{
+    width: 90vh;
+    padding: 20px;
+    background-color: $boxbgcolor;
+    max-height: 90vh;
+    overflow: hidden;
+    border-radius: 10px;
+    img{ // Delete
+        width: 20px;
+    }
+    span{
+        font-size: 13px;
+        font-weight: $tittle-weight;
+    }
+    .options::-webkit-scrollbar {
+        display: none;
+    }
+    .options{
+        overflow-y: scroll;
+        max-height: 82%;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .filter-options{
+        width: fit-content;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        .filter-by-mobile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            p{
+                margin: 0 !important;
+                margin-right: 10px !important;
+                font-size: 11px;
+                font-weight: $subtittle-weight;
+            }
+        }
+        
+        button{
+            height: 50px;
+            display: flex;
+            border: none !important;
+            background-color: $bgcolor;
+            border-radius: 10px;
+            align-items: center;
+            padding:0px 15px;
+            min-width: 160px;
+            justify-content: space-between;
+            margin-right: 30px;
+            img{
+                width: 20px;
+            }
+            .pay-with{
+                text-align: start;
+                p{
+                    margin: 0;
+                    text-align: start;
+                    margin-bottom: -5px;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    .trader-option{
+        border-radius: 10px;
+        height: 150px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        .left-info{
+            min-width: 50%;
+            padding: 20px;
+            .first-column{
+                span{
+                    font-size: 15px;
+                }
+                p{
+                    margin: 0 !important;
+                    text-align: start;
+                    color: $profit;
+                    font-weight: $subtittle-weight;
+                }
+            }
+            .final-column{
+                height: 45px;
+                width: 90%;
+                p{
+                    margin: 0;
+                    text-align: start;
+                }
+                .txn{
+                    width: fit-content;
+                }
+                .likes{
+                    align-items: center;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                }
+                .dislikes{
+                    align-items: center;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .right-info{
+            background-color: $bgcolor;
+            border-radius: 10px;
+            width: 50%;
+            padding: 20px;
+            .first-column{
+                align-items: center;
+                justify-content: space-between;
+                .rate{
+                    height: 40px;
+                    p{
+                        margin: 0;
+                        margin-bottom: -5px;
+                        text-align: start;
+                    }
+                    span{
+                        font-size: 15px;
+                    }
+                }
+                button{
+                    min-width: 120px;
+                    height: 40px;
+                }
+            }
+            .pay-methods{
+                p{
+                    margin: 0;
+                    text-align: start;
+                    font-weight: $subtittle-weight;
+                }
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .hover{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+        .mobile-info{
+            display: none;
+            width: 100%;
+            padding: 20px;
+            .first-column{
+                height: 40px;
+                width: 100%;
+                .trader-info{
+                    width: fit-content;
+                    height: 40px;
+                    span{
+                        font-size: 15px;
+                        img{
+                            margin-left: 5px;
+                        }
+                    }
+                    p{
+                        margin-top: -5px;
+                        font-size: 11px;
+                        text-align: start;
+                    }
+                }
+                button{
+                    width: 120px;
+                    height: 40px;
+                }
+            }
+            .second-column{
+                p{
+                    text-align: start;
+                    margin: 0;
+                    margin-bottom: -5px;
+
+                    font-size: 11px;
+                }
+            }
+            .last-column{
+                margin-top: 10px;
+                .pay-methods{
+                    width: fit-content;
+                }
+                .limit{
+                    margin-top: -10px;
+                    p{
+                        margin: 0;
+                        margin-bottom: -5px;
+                        text-align: end;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+.offer-info-box{
+    padding: 20px;
+    background-color: $boxbgcolor;
+    border-radius: 8px;
+    font-size: 13px;
+    span{
+        font-size: 15px;
+        font-weight: $extra-weight;
+        display: flex;
+    }
+    .mb-2:nth-child(1){
+        margin-bottom: 40px !important;
+    }
+    span:nth-child(1n+2){
+        margin-top: -3px;
+        align-items: center;
+        span{
+            margin: 0;
+        }
+        p{
+            margin: 0 !important;
+            margin-left: 10px !important;
+            color: $profit;
+        }
+    }
+    .sx{
+        font-weight: $subtittle-weight !important;
+    }
+    p{
+        margin: 0 !important;
+        text-align: start;
+    }
+}
+.exchange-calculate{
+    .left-box{
+        width: 46%;
+        margin-right: 2%;
+        .calculate-rate-box{
+            padding: 20px;
+            background-color: $boxbgcolor;
+            border-radius: 10px;
+            min-width: 380px;
+            font-size: 13px;
+            span{
+                font-weight: $extra-weight;
+                font-size: 15px;
+            }
+            label:nth-child(1){
+                margin-top: 20px !important;
+            }
+            label{
+                margin-bottom: 5px !important;
+                margin-left: 10px !important;
+            }
+            p{
+                margin: 0 !important;
+                text-align: start;
+            }
+            button{
+                width: 100%;
+            }
+            .payment-info{
+                .op{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 30px;
+                    p{
+                        margin: 0 !important;
+                        font-size: 11px;
+                    }
+                    span{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .right-box{
+        width: 46%;
+        .offer-trader{
+            padding: 20px;
+            border-radius: 10px;
+            background-color: $boxbgcolor;
+            height: 315px;
+            .profile{
+                align-items: center;
+                .profile-img{
+                    width: 60px;
+                    height: 60px;
+                    background-color: $bgcolor;
+                    border-radius: 30px;
+                }
+                .info{
+                    margin-left: 10px;
+                    span{
+                        font-weight: $tittle-weight;
+                    }
+                    p{
+                        margin: 0 !important;
+                        margin-top: -3px !important;
+                        font-weight: $subtittle-weight;
+                    }
+                }
+            }
+            .likes{
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+                span{
+                    font-size: 13px;
+                    font-weight: $tittle-weight;
+                    margin-right: 10px;
+                }
+                p{
+                    margin: 0 !important;
+                    text-align: start;
+                }
+            }
+            .txn-made{
+                p{
+                    margin: 0 !important;
+                    text-align: start;
+                    margin-bottom: -3px !important;
+                }
+                span{
+                    font-size: 15px;
+                    font-weight: $tittle-weight;
+                }
+            }
+            .verifies{
+                span{
+                    font-size: 13px;
+                    font-weight: $tittle-weight;
+                    color: $special_color;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+.investments-container{
+    .left-box{
+        width: 65%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .overview{
+            background-color: $boxbgcolor;
+            border-radius: 10px;
+            min-width: 100%;
+            height: 340px;
+            padding: 20px;
+            .top-col{
+                span{
+                    font-size: 13px;
+                    font-weight: $subtittle-weight;
+                }
+                p{
+                    margin: 0 !important;
+                    margin-top: -5px !important;
+                    font-size: 25px;
+                    font-weight: $extra-weight;
+                    align-items: center;
+                    display: flex;
+                    span{
+                        margin-left: 10px;
+                        font-weight: $tittle-weight;
+                        color: $profit;
+                    }
+                }
+                .right{
+                    text-align: end;
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .graphic{
+                width: 100%;
+                height: 150px;
+            }
+            button{
+                margin-top: 40px;
+                width: 120px;
+                font-weight: $tittle-weight !important;
+            }
+        }
+        .savings-box{
+            margin-top: 20px;
+            min-width: 48.5%;
+            padding: 20px;
+            background-color: $boxbgcolor;
+            border-radius: 10px;
+            height: 260px;
+            span{
+                font-size: 15px;
+                font-weight: $tittle-weight;
+            }
+            .bottom{
+                align-items: center;
+                .left{
+                    height: fit-content;
+                    p{
+                        margin: 0 !important;
+                        text-align: start;
+                        font-size: 13px;
+                    }
+                    span{
+                        font-size: 18px;
+                        font-weight: $tittle-weight;
+                    }
+                }
+                .right{
+                    height: fit-content;
+                    padding-right: 10px;
+                    .top-coins{
+                        display: flex;
+                        .coin{
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            border: 2px solid $bgcolor;
+                            background-color: $basic_color;
+                            margin-right: -13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-box{
+        width: 33%;
+        .day-returns{
+            padding: 20px;
+            height: 100%;
+            background-color: $boxbgcolor;
+            border-radius: 10px;
+            span{
+                font-size: 15px;
+                font-weight: $tittle-weight;
+            }
+            .tit{
+                display: flex;
+                justify-content: space-between;
+                span{
+                    font-size: 13px;
+                }
+            }
+            .coin-return{
+                margin: 5px 0px;
+                height: 50px;
+                align-items: center;
+                width: 100%;
+                .left{
+                    img{
+                        width: 45px;
+                    }
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+                .right{
+                    display: flex;
+                    flex-direction: column;
+                    height: fit-content;
+                    span{
+                        text-align: end;
+                        color: $profit;
+                        font-size: 15px;
+                        font-weight: $tittle-weight;
+                    }
+                    p{
+                        margin: 0 !important;
+                        margin-top: -5px !important;
+                        font-size: 13px;
+                        font-weight: $subtittle-weight;
+                    }
+                }
+            }
+        }
+    }
+}
+.stake-container{
+    margin-top: 10vh;
+    .left-box{
+        width: 40%;
+        min-width: 400px;
+        margin-right: 2%;
+        padding: 20px;
+        background-color: $boxbgcolor;
+        border-radius: 10px;
+        .f-span{
+            font-size: 13px;
+            font-weight: $tittle-weight;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                font-size: 11px;
+                img{
+                    width: 10px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .selected-coin{
+            height:55px;
+            background-color: $bgcolor;
+            border-radius: 8px;
+            align-items: center;
+            .left{
+                align-items: center;
+                display: flex;
+                margin-left: 10px;
+                img{
+                    width: 40px;
+                }
+                .info{
+                    height: fit-content;
+                    margin-left: 10px;
+                    span{
+                        font-weight: 600;
+                        font-size: 15px;
+                    }
+                    p{
+                        margin: 0 !important;
+                        margin-top: -3px !important;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .right{
+                height: fit-content;
+                margin-right: 15px;
+                display: flex;
+                flex-direction: column;
+                span{
+                    text-align: end !important;
+                    color: #27A69A;
+                    font-size: 15px;
+                    font-weight: $tittle-weight;
+                }
+                p{
+                    margin: 0 !important;
+                    text-align: end !important;
+                    font-size: 11px;
+                    margin-top: -3px !important;
+                    font-weight: $tittle-weight;
+                }
+            }
+        }
+        .stake-amount{
+
+            display: flex;
+            height: 50px;
+            align-items: center;
+            input{
+                min-width: 100%;
+                height: 50px;
+                -webkit-appearance: none;
+                border: none !important;
+                background: none !important;
+                outline: none !important;
+                text-overflow:ellipsis !important;
+                border-radius: 8px !important;
+                background-color: $bgcolor !important;
+                padding-left: 15px;
+                font-size: 15px !important;
+                font-weight: $subtittle-weight;
+            }
+            button{
+                margin-left: -60px;
+                height: 35px;
+                font-weight: 700;
+            }
+        }
+        .extra{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: $tittle-weight;
+            font-size: 13px;
+            margin-bottom: 8px;
+            p{
+                margin: 0 !important;
+                font-weight: $text-weight !important;
+            }
+        }
+    }
+    .right-box{
+        width: 45%;
+        .info-box{
+            height: 135px;
+            background-color: $boxbgcolor;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            p{
+                margin: 0 !important;
+                font-weight: $tittle-weight;
+                margin-left: -5px !important;
+            }
+            span{
+                font-weight: $tittle-weight;
+                color: $profit;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.trading-container{
+    margin-top: 5vh;
+    .left-box{
+        background-color: $boxbgcolor;
+        border-radius: 10px;
+        width: 45%;
+        padding: 20px;
+        span{
+            font-weight: $tittle-weight;
+        }
+        .step{
+            margin-bottom: 10px;
+            p{
+                margin: 0 !important;
+                text-align: start;
+                font-weight: $subtittle-weight;
+                margin-bottom: -3px !important;
+            }
+            span{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 15px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .tips{
+            p{
+                text-align: start;
+                font-weight: $subtittle-weight;
+                span{
+                    color: $loss;
+                }
+            }
+        }
+    }
+    .right-box{
+        width: 45%;
+        margin-left: 2vw;
+        .chat{
+            height: 300px;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 991px){ //table
+    .stake-container{
+        .left-box{
+            width: 70% !important;
+        }
+        .right-box{
+            margin-top: 20px;
+            width: 70%;
+            .info-box{
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+    .investments-container{
+        margin-top: 0vh !important;
+        .left-box{
+            min-width: 100% !important;
+        }
+        .right-box{
+            margin-top: 20px;
+            min-width: 100% !important;
+        }
+    }
+    .exchange-calculate{
+        margin-top: 1vh !important;
+        .left-box{
+            width: 60%;
+        }
+        .right-box{
+            width: 35% !important;
+        }
+    }
+    .exchange-step1-box{
+        margin-top: -5vh;
+    }
+    .transfers-container{
+        width: 96%;
+        margin:2vw;
+    }
+    .convert-box{
+        margin-top: 0vh;
+    }
+    .vertical-navbar{
+        display: none;
+    }
+    .horizontal-phone-navbar{
+        display: block;
+        width: 100vw;
+        background-color: #1c1c24;
+        height: 50px;
+        z-index: 70;
+        display: flex;
+        align-items: center;
+        ul{
+            margin: 0 !important;
+            display: flex;
+            list-style: none !important;
+            padding:0 !important;
+            padding-right: 10vw !important;
+            li{
+                margin-left: 10vw;
+                a{
+                    font-size: 1.5vw;
+                    text-decoration: none;
+                    color: $bgcolor;
+                }
+            }
+        }
+    }
+    .container{
+        margin-top: 50px;
+        margin-left: 0vw !important;
+        max-width: 100vw !important;
+        padding: 2vw !important;
+        flex-wrap: wrap !important;
+    }
+    .wallet-overview{
+        .wallet-overview-left{
+            min-width: 100%;
+            .funds{
+                .profit-graph{
+                    height: 145px;
+                }
+            }
+        }
+        .wallet-overview-assets{
+            display: none;
+        }
+    }
+    .deposit-container{
+        margin-top: 25px;
+    }
+}
+@media (max-width: 730px) { //cel
+    .stake-container{
+        .left-box{
+            width: 100% !important;
+            min-width: 100% !important;
+        }
+        .right-box{
+            width: 100%;
+            min-width: 100%;
+            .info-box{
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+    .investments-container{
+        .overview{
+            height: 250px !important;
+        }
+        .savings-box{
+            height: 190px !important;
+            .top-coins{
+                display: none !important;
+            }
+        }
+
+    }
+    .exchange-calculate{
+        margin-top: 1vh !important;
+        .left-box{
+            width: 100%;
+        }
+        .right-box{
+            margin-top: 20px;
+            width: 100% !important;
+            .offer-trader{
+                margin-top: 20px;
+            }
+        }
+    }
+    .filter-options{
+        width: fit-content;
+        width: 100% !important;
+        margin-top: -10px !important;
+        margin-bottom: 15px !important;
+        button{
+            display: none !important;
+        }
+        .filter-by-mobile{
+            display: flex !important;
+        }
+    }
+    .trader-option{
+        background-color: $bgcolor;
+        height: 150px !important;
+        margin-bottom: 15px !important;
+        .left-info{
+            display: none !important;
+        }
+        .right-info{
+            display: none !important;
+        }
+        .mobile-info{
+            display: block !important;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .exchange-step1-box{
+        min-width: 100% !important;
+    }
+    .transfers-container{
+        margin-top: -5vh;
+        width: 100% !important;
+        table{
+            tr{
+                td{
+                    font-size: 11px !important;
+                }
+                td:nth-child(1){
+                    padding-left: 0;
+                }
+                td:nth-child(2){
+                    display: none;
+                }
+                td:nth-child(3){
+                    display: none;
+                }
+            }
+        }
+    }
+    .convert-box{
+        width: 98%;
+        min-width: 98% !important;
+        .btn-max-balance{
+            margin-left: -60px !important;
+        }
+    }
+    .logb{
+        display: none !important;
+    }
+    .deposit-container{
+        height: auto !important;
+    }
+    .deposit-tips{
+        min-width: 98% !important;
+        margin-right: 0px !important;
+        height: auto !important;
+    }
+    .deposit-box{
+        width: 98% !important;
+        margin-top: 20px;
+        height: auto !important;
+    }
+    .send-crypto-box{
+        label{
+            margin:0 !important;
+        }
+    }
+    .btn-option{
+        p{
+            font-size: 11px;
+            margin-top: 26px;
+        }
+        .x{
+            margin-top: 10px;
+        }
+    }
+    .container{
+        padding: 20px !important;
+    }
+    .navbar{
+        .middle-sect{
+            opacity: 0%;
+            position: absolute;
+        }
+    }
+    .horizontal-phone-navbar::-webkit-scrollbar{
+        width: 0 !important;
+    }
+    .horizontal-phone-navbar{
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-left: 0px;
+        ul{
+            a{
+                font-size: 11px !important;
+                font-weight:$subtittle-weight;
+            }
+        }
+    }
+    .sustain{
+        height: auto;
+        width: 100vw !important;
+        .total-balance{
+            height: auto !important;
+            border-radius: 10px !important;
+            padding: 15px !important;
+            span{
+                font-size: $mobile-font-subt;
+                margin-top: -5px;
+            }
+            .amount-acc{
+                span{
+                    margin-top: 0px;
+                    font-size:9px !important;
+                }
+            }
+            .profit-graph{
+                height: 70px;
+            }
+            .balance{
+                .bal-prev{
+                    span{
+                        font-size: 20px;
+                    }
+                    p{
+                        margin-top: -3px;
+                        font-size: $mobile-font-tittle;
+                    }
+                }
+                .top-coins{
+                    margin-right: 20px;
+                    .coin{
+                        width: 25px;
+                        height: 25px;
+                        border: 2px solid $bgcolor;
+                        margin-right: -10px;
+                    }
+                }
+            }
+            .ctas{
+                button{
+                    width: 60px;
+                    height: 25px;
+                    font-size: 9px !important;
+                    padding: 0px 0px !important;
+                }
+            }
+        }
+    }
+    .shadow-mm{
+        box-shadow: 0px 1px 5px #fafafa !important;
+    }
+    .shadow-lt{
+        box-shadow: 0px 3px 4px #e0e0e0 !important;
+    }
+    .savings-preview{
+        margin-top: 15px;
+        min-width: 48% !important;
+        height: auto !important;
+        border-radius: 10px !important;
+        padding: 20px !important;
+        span{
+            font-size: $mobile-font-tittle;
+            font-weight: $tittle-weight;
+        }
+        .lock-graph{
+            height: 80px;
+        }
+        .locked-prev-amount{
+            span{
+                font-size: 18px;
+            }
+            p{
+                margin-left: 10px;
+            }
+        }
+    }
+    .dashb-right{
+        margin-left: 0;
+        width: 100%;
+        .send-receive{
+            position: absolute;
+            opacity: 0;
+        }
+        .explore-cryptos{
+            span{
+                //border: 1px solid #75C07E;
+                font-size: 15px;
+            }
+            .top-crypto{
+                padding: 0 8px;
+                margin-top: 15px;
+                height: 55px;
+                border-radius: 8px;
+                .info{
+                    
+                    img{
+                        margin-top: -17px;
+                        width: 50px;
+                        height: 50px;
+                    }
+                    .coin-info{
+                        span{
+                            font-size: 15px;
+                        }
+                        p{
+                            font-size: 11px;
+                            margin-top: -3px;
+                        }
+                    }
+                }
+                .apy{
+                    font-size: 15px !important;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .wallet-overview{
+        .wallet-overview-coins{
+            display: none !important;
+        }
+        .profit-graph{
+            height: 120px !important;
+        }
+    }
+}
