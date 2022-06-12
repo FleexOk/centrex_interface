@@ -185,7 +185,7 @@
     <div class="container-bar"></div>
     <div class="container finalcontainer fcs" id="finalx">
         <div class="text1">
-            <h5># First official cryptocurrency retail-outlet in the world</h5>
+            <h5 class="finald"># First official cryptocurrency retail-outlet in the world</h5>
             <h2>Start for <br>free, <span>today.</span></h2>
             <h2 id="jquery">Start for free, <br><span>today.</h2>
             <a href="register.html">Start Investing</a>
@@ -212,16 +212,32 @@
         </div>
         <div class="upperlight"></div>
         <div id="scene">
-            <div class="bglogo">
+            <div class="bglogo finalbg">
                 <img src="images/logo.gif">
             </div>
         </div>
     </div>
-
 </div>
-</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script>
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop && $(".fcs").offset().top-50 > $(this).scrollTop()){
+        $("#nav").css("top", "-70px");
+    } else {
+        $("#nav").css("top", "0px");
+        if ($(".fixedbox").offset().top > 700 && ($(".finalbg").offset().top-500) > $(this).scrollTop()) {
+            $("#rectangle").css("opacity", "80%");
+        } else {
+            $("#rectangle").css("opacity", "0%");
+        }
+    }
+   lastScrollTop = st;
+});
+</script>
 <script>
     gsap.registerPlugin(ScrollTrigger);
     var timeline = new TimelineLite({repeat:-1});
@@ -403,4 +419,5 @@
         ease: "SlowMo"
     })
 </script>
+</body>
 </html>
